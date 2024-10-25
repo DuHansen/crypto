@@ -37,12 +37,11 @@ jobs:
       - name: Upload artifact        
         uses: actions/upload-pages-artifact@v3        
         with:          
-          # Upload only relevant files
           path: |
             . 
-            !README.md # Ignore README if you don't want it deployed
-            !.gitignore # Ignore .gitignore 
             !node_modules/ # Ignore node_modules
+            !.gitignore # Ignore .gitignore
+            !README.md # Ignore README.md if you don't want it deployed
             *.html
             *.css
             *.js
