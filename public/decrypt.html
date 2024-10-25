@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descriptografar Mensagem</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -57,14 +58,14 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div id="app" class="container">
         <h2>Descriptografar Mensagem</h2>
-        <textarea id="encryptedMessage" rows="4" placeholder="Cole sua mensagem criptografada aqui..."></textarea>
-        <button onclick="decryptMessage()">Descriptografar</button>
+        <textarea v-model="encryptedMessage" rows="4" placeholder="Cole sua mensagem criptografada aqui..."></textarea>
+        <button @click="decryptMessage">Descriptografar</button>
         <p>Mensagem Original:</p>
-        <textarea id="originalMessage" rows="4" readonly></textarea>
+        <textarea v-model="originalMessage" rows="4" readonly></textarea>
         <div class="navigation">
-            <button onclick="window.location.href='encrypt.html'">Voltar para Criptografar</button>
+            <button @click="goToEncrypt">Voltar para Criptografar</button>
         </div>
     </div>
     <script src="decrypt.js"></script>
