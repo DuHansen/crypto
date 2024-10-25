@@ -1,0 +1,12 @@
+{
+  "name": "crypto",
+  "version": "1.0.0",
+  "description": "Este projeto consiste em duas páginas simples que permitem a criptografia e descriptografia de mensagens usando criptografia assimétrica (RSA). O objetivo é fornecer uma maneira segura de transmitir mensagens entre dois pontos.",
+  "main": "decrypt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
